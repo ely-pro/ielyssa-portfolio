@@ -275,39 +275,6 @@ export function BlogDetailView() {
             ))}
           </Stack>
         </Box>
-
-        {/* Share Section */}
-        <Card sx={{ p: 4, bgcolor: 'background.neutral' }}>
-          <Typography variant="h6" sx={{ mb: 2, fontWeight: 600 }}>
-            Share this article
-          </Typography>
-          <Stack direction="row" spacing={2}>
-            {[
-              { icon: 'mdi:twitter', color: '#1DA1F2', label: 'Twitter' },
-              { icon: 'mdi:linkedin', color: '#0A66C2', label: 'LinkedIn' },
-              { icon: 'mdi:facebook', color: '#1877F2', label: 'Facebook' },
-              { icon: 'mdi:link-variant', color: '#637381', label: 'Copy Link' },
-            ].map((social) => (
-              <Button
-                key={social.label}
-                variant="outlined"
-                startIcon={<Iconify icon={social.icon} />}
-                sx={{
-                  borderColor: alpha(social.color, 0.3),
-                  color: social.color,
-                  transition: 'all 0.3s ease',
-                  '&:hover': {
-                    borderColor: social.color,
-                    bgcolor: alpha(social.color, 0.08),
-                    transform: 'translateY(-2px)',
-                  },
-                }}
-              >
-                {social.label}
-              </Button>
-            ))}
-          </Stack>
-        </Card>
       </Container>
     </Box>
   );
