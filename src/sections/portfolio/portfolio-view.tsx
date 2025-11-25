@@ -233,11 +233,18 @@ export function PortfolioView() {
                     size="large"
                     variant="contained"
                     startIcon={<Iconify icon="carbon:document-download" />}
+                    component="a"
+                    href="/IRANKUNDA-Elyssa-CV.pdf"
+                    download="IRANKUNDA-Elyssa-CV.pdf"
                     sx={{
                       px: 4,
                       py: 1.5,
                       borderRadius: 2,
                       boxShadow: (thm) => thm.customShadows.z8,
+                      textDecoration: 'none',
+                      '&:hover': {
+                        textDecoration: 'none',
+                      },
                     }}
                   >
                     Download CV
