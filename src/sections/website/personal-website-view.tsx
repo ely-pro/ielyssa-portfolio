@@ -1473,7 +1473,7 @@ export function PersonalWebsiteView() {
                   </Button>
                   <Button
                     component="a"
-                    href="https://www.linkedin.com/in/irankunda-elyssa-452001290/"
+                    href="https://www.linkedin.com/in/ielyssa/"
                     target="_blank"
                     rel="noopener noreferrer"
                     variant="outlined"
